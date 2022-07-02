@@ -1,0 +1,104 @@
+.doc {
+    width: 100vw;
+    height: 100vh;
+    background-color: #4158d0;
+    background-image: linear-gradient( 43deg, #3551da 0%, #c850c0 47%, #ff7b00 100%);
+    background-size: 100% 250%;
+    animation: backAnime ease-in-out 5s infinite;
+}
+@keyframes backAnime {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 200% 100%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.card {
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 50vh 0 0 50vw;
+    transform: translate(-50%, -50%);
+    background-color: #d1f8ff8a;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 1rem;
+    border-radius: 10px;
+    user-select: none;
+}
+.card-sec {
+    display: block;
+}
+.card-sec-mail {
+    padding: 1rem 1rem .3rem 1rem;
+}
+.card-sec-pass {
+    padding: .3rem 1rem 1rem 1rem;
+}
+.inputs {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #cccccc;
+    padding: .5rem;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: bold;
+    width: calc( 100% - 3.3rem );
+}
+.inputs::placeholder {
+    color: #555555;
+}
+.inputs:hover {
+    background-color: #bbbbbb;
+}
+.inputs:focus {
+    background-color: #aaaaaa;
+}
+.inputs:focus::placeholder {
+    color: #333333;
+}
+.pass-img {
+    vertical-align: bottom;
+    height:2rem;
+    background-color: #dddddd;
+    border-radius: 5px;
+}
+.pass-img:active {
+    background-color: #999999;
+}
+.login-button {
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    background-color: #48ff76;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333333;
+}
+.login-button:hover {
+    background-color: #5eff86;
+}
+.login-button:active {
+    background-color: #23ff5a;
+}
+.card-sec-login {
+    padding: 1rem;
+    padding-top: 0;
+}
+.smooth {
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -o-transition: 0.1s;
+    -ms-transition: 0.1s;
+    transition: 0.1s
+}
